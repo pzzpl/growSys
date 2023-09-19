@@ -168,7 +168,7 @@ CREATE TABLE `t_user`  (
 -- ----------------------------
 -- Records of t_user
 -- ----------------------------
-INSERT INTO `t_user` VALUES (1, '朱一鸣', '朱一鸣', 'e10adc3949ba59abbe56e057f20f883e', '691639910@qq.com', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584367404804&di=070c78aac95428c480b480a87b534e96&imgtype=0&src=http%3A%2F%2Fbbs.cnlinfo.net%2Fup%2Ftou%2F150611164743.jpg', 1, '2020-03-08 18:25:26', NULL);
+INSERT INTO `t_user` VALUES (1, 'root', 'root', 'e10adc3949ba59abbe56e057f20f883e', '691639910@qq.com', 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1584367404804&di=070c78aac95428c480b480a87b534e96&imgtype=0&src=http%3A%2F%2Fbbs.cnlinfo.net%2Fup%2Ftou%2F150611164743.jpg', 1, '2020-03-08 18:25:26', NULL);
 
 SET FOREIGN_KEY_CHECKS = 1;
 
@@ -185,3 +185,6 @@ CREATE TABLE `t_teacher`  (
                               `update_time` datetime NULL DEFAULT NULL,
                               PRIMARY KEY (`id`) USING BTREE
 )ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+
+INSERT INTO `t_teacher` VALUES (1, 'root', '123456', 0, '信息技术', '123456', '2020-03-08 18:25:26', '2020-03-08 18:25:26');
